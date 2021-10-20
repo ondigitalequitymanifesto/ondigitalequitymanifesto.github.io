@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&family=Roboto:wght@300;500;900&display=swap');
+
+:root { 
+    --main-text-color: black;
+    --off-text-color: white;
+    --main-font: 'Roboto', sans-serif;
+    --highlight-font: 'Roboto Mono', monospace;
+    --background-color: #fff;
+    font-size: 16px;
+}
+
+html, body { 
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-family: var(--main-font);
+}
+
+.landing { 
+    height: 110vh;
+    width: 100vw;
+}
+
+.landing h1 { 
+    font-size: 17vw;
+    font-family: var(--main-font);
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    margin: 0;
+}
+
+.landing p { 
+    font-family: var(--highlight-font);
+    font-size: 1.5vw;
+    font-weight: 300;
+    position: absolute;
+    right: 29vw;
+    bottom: calc(3.7vw + 5px);
+    margin:0;
+}
+
+/* --- Nav Styles --- */
+
+nav { 
+    position: fixed;
+    border-bottom: 3px solid black;
+    margin-left: 25px;
+    width: calc(100% - 50px);
+    background-color: var(--background-color);
+    z-index: 3;
+}
+
+ul { 
+    padding: 0;
+}
+ul li { 
+    font-weight: 300;
+    font-size: 1.1em;
+    font-family: var(--main-font);
+    display: inline-block;
+    padding-right: 3em;
+    padding-top: 1.5em;
+    margin: 0;
+}
+
+/* --- CONTENT GRID --- */
+
+.content { 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 20px;
+}
+
+/* --- Foreward --- */
+.foreward { 
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+}
+
+/* --- TEXT --- */
+h2 { 
+    font-size: 3em;
+    font-family: var(--highlight-font);
+}
+
+.content p { 
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2em;
+    
+}
+
