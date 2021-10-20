@@ -66,6 +66,20 @@ ul li {
     margin: 0;
 }
 
+li a { 
+    text-decoration: none;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.3s linear;
+    color: black;
+}
+
+li a:hover { 
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.3s linear;
+    font-weight: bold;
+
+}
+
 /* --- CONTENT GRID --- */
 
 .content { 
