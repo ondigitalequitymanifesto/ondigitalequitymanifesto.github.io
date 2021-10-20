@@ -71,7 +71,10 @@ ul li {
 .content { 
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
     grid-column-gap: 20px;
+    grid-row-gap: 5em;
+    margin: 0 50px;
 }
 
 /* --- Foreward --- */
@@ -79,6 +82,12 @@ ul li {
     grid-column-start: 2;
     grid-column-end: 4;
     
+}
+
+.foreward-pairing { 
+    grid-column-start: 5;
+    background-image: url("assets/photo-1621361365424-06f0e1eb5c49.jpg");
+    background-position: right;
 }
 
 /* --- TEXT --- */
@@ -91,6 +100,104 @@ h2 {
     font-size: 1em;
     font-weight: 300;
     line-height: 2em;
-    
+}
+
+/* --- Section 1 --- */
+
+.one { 
+    grid-row-start: 2;
+}
+
+.two { 
+    grid-row-start: 3;
+}
+
+.three [ 
+    grid-row-start: 4;
+]
+
+.four { 
+    grid-row-start: 5;
+}
+
+.five { 
+    grid-row-start: 6;
+}
+
+.six { 
+    grid-row-start: 7;
+}
+
+.seven { 
+    grid-row-start: 8;
+}
+
+.section-number { 
+    grid-column-start: 1;
+}
+
+.section-content {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+/* --- ACTORS --- */
+.actor-title { 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 1.7em;
+}
+
+.actor-content { 
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+/* --- CARDS --- */
+
+.card { 
+    margin: 3em auto;
+}
+
+.action-card-wrapper { 
+    position: relative;
+    height: 13vw;
+    width: 61vw;
+    margin: 0 auto;
+}
+
+.action-card-before { 
+    background-color: #111111;
+    width: 61vw;
+    height: 13vw;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+}
+
+.action-card { 
+    z-index: 1;
+    width: 61vw;
+    height: 13vw;
+    position: absolute;
+    padding: 3vw;
+    background-color: #363636;
+    color: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h3 { 
+    font-family: var(--highlight-font);
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.action-card p { 
+    font-size: .85vw;
+    font-weight: 300;
+    line-height: 1.75vw;
+
 }
 
